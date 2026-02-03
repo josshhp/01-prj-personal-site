@@ -1,11 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josh Pugh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Add your HTML content here -->
+  <!-- ====== NAV ====== -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="logo" href="#top">JoshPugh</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a class="btn btn-small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+
+          <h1>Hey, I’m <span class="accent">Josh Pugh</span>.</h1>
+
+          <p class="lead">
+            I’m a computer science student building web development projects all semester.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn-ghost" href="#about">About Me</a>
+          </div>
+
+        </div>
+
+
+        <!-- “Polaroid” card -->
+        <div class="polaroid" aria-label="Polaroid card">
+          <div class="polaroid-frame">
+            <div class="polaroid-photo">
+              <img src="img/me.jpg" alt="Photo of Josh Pugh" class="profile-photo" />
+              <div class="photo-overlay" aria-hidden="true"></div>
+            </div>
+
+            <div class="polaroid-bottom">
+            </div>
+          </div>
+
+          <div class="polaroid-caption">
+            <p class="muted">CS student at the University of Utah, learning web dev and building projects all semester.
+            </p>
+            <a class="link" href="#projects">Peek at projects →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative ridge at bottom of hero -->
+      <div class="hero-ridge" aria-hidden="true"></div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="section" id="about">
+      <div class="container section-grid">
+        <div>
+          <h2>About</h2>
+          <p class="muted">
+            Hi! I’m a CS student at the University of Utah taking a web development course. I’m learning how to build
+            modern websites and small web apps, and I’m using this site to showcase my progress. Check back soon—this
+            portfolio will keep growing as I complete new projects.
+          </p>
+        </div>
+
+        <div class="card card-paper">
+          <h3>At a Glance</h3>
+          <ul class="list">
+            <li><strong>Currently learning:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Goal:</strong> Build 3+ portfolio projects</li>
+            <li><strong>Favorite style:</strong> Warm, retro, outdoors</li>
+          </ul>
+          <a class="btn btn-small" href="#contact">Say hi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p class="muted">Tools I’m using on this journey.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>HTML</h3>
+            <p class="muted">Semantic structure & accessibility basics.</p>
+          </article>
+          <article class="card">
+            <h3>CSS</h3>
+            <p class="muted">Layout, spacing, Flexbox, Grid, responsive design.</p>
+          </article>
+          <article class="card">
+            <h3>JavaScript</h3>
+            <p class="muted">DOM, events, interactivity.</p>
+          </article>
+          <article class="card">
+            <h3>GitHub</h3>
+            <p class="muted">Version control & project sharing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p class="muted">A few stops along the route.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="badge">NEW</span>
+              <span class="badge badge-soft">HTML • CSS</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p class="muted">My first web development project—a personal portfolio site built with HTML and CSS to
+              document my progress and projects throughout the semester.</p>
+
+            <div class="project-links">
+              <a class="btn btn-small" href="#" target="_blank">Live Site</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">Feel free to reach out!</p>
+
+          <div class="contact-links">
+            <a class="link" href="mailto:josh.pugh4@gmail.com">josh.pugh4@gmail.com</a>
+            <a class="link" href="https://www.linkedin.com/in/josh-pugh-699588237" target="_blank"
+              rel="noopener">LinkedIn</a>
+            <a class="link" href="https://github.com/josshhp" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Joshua Pugh</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
