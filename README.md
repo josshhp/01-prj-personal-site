@@ -1,6 +1,10 @@
-# Project 1: Build Your Personal Website with AI!
-In this project, you will leverage AI and your knowledge of HTML and CSS to build a simple, single-page personal website that will showcase your projects.
+Project Overview:
+  This project is my personal portfolio so it shows a little bit of who I am and the projects that I have done. It includes links and prievews 
+  to each project so people can check them out.
 
-You will use AI to help you brainstorm design ideas, apply web development best practices, and troubleshoot issues, bringing your vision to life on screen! 
+Technologies Used:
+  The website uses both html and css for the structure and styling of the page.
 
-Launch a Codespace to get started. **Remember to Commit and Push** your project changes to GitHub from Codespaces to prevent losing progress.
+What I learned:
+  I learned how to work with html and css to create a website. I learned how stlye the page to fit a general theme. I also learned how to publish
+  a page from github.
