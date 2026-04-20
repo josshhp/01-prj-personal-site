@@ -275,6 +275,11 @@ h1{
   object-fit: cover;
 }
 
+/* Atlas screenshot has key content near the top, so keep the crop higher. */
+.project-image-atlas{
+  object-position: center top;
+}
+
 .project-image-overlay{
   position: absolute;
   inset: auto 0 0 0;
@@ -385,6 +390,12 @@ h1{
   .project-card-back{
     transform: none;
     height: 220px;
+  }
+
+  /* On touch devices, show more of the Atlas screenshot so text doesn't crop. */
+  .project-image-atlas{
+    object-fit: contain;
+    background: #0f1520;
   }
 }
 
